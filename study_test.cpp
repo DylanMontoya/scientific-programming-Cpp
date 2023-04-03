@@ -89,10 +89,36 @@ int long_onda(){
     return 0;
 }
 
+int ortogonal(){
+
+    int x1, y1, x2, y2, x3, y3, x4, y4;
+    int AB_x, AB_y, CD_x, CD_y, producto;
+
+    cout << "Ingrese las 4 posicones de X y Y: ";
+    cin >> x1 >> y1;
+    cout << "Ingrese las 4 posicones de X y Y: ";
+    cin >> x2 >> y2;
+    cout << "Ingrese las 4 posicones de X y Y: ";
+    cin >> x3 >> y3;
+    cout << "Ingrese las 4 posicones de X y Y: ";
+    cin >> x4 >> y4;
+
+    AB_x = x2 - x1;
+    AB_y = y2- y1;
+    CD_x = x4 - x3;
+    CD_y = y4 - y3;
+
+    producto = AB_x * CD_x + AB_y * CD_y;
+
+    cout << producto;
+    return 0;
+}
+
 
 int main(){
-    bin_hexa();
-    angulo_agudo();
-    long_onda();
+    // bin_hexa();
+    // angulo_agudo();
+    // long_onda();
+    ortogonal();
     return 0;
 }
